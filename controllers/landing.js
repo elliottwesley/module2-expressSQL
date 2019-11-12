@@ -55,3 +55,25 @@ exports.edit_lead = function(req, res, next) {
 		res.redirect('/lead/' + req.params.lead_id);
 	});
 }
+
+// Delete lead on POST.
+exports.delete_lead = function(req, res, next){
+	return models.Lead.destroy({
+		where: {
+			id: req.params.lead_id
+		}
+	}).then(result => {
+		res.redirect('/leads')
+	});
+}
+
+// Delete lead and return a JSON on POST.
+exports.delete_lead_json = function(req, res, next){
+	return models.Lead.destroy({
+		where: {
+			id: req.params.lead_id
+		}
+	}).then(result => {
+		res.send({ msg: "Successfully deleted." })
+	});
+}
