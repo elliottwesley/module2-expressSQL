@@ -2,7 +2,7 @@ const models = require('../models')
 
 // Load the index page (landing.pug) on GET
 exports.get_landing = function(req, res, next) {
-	res.render('landing', { title: 'Express' });
+	res.render('landing', { title: 'Express', user: req.user });
 }
 
 // Submit a created lead on POST
