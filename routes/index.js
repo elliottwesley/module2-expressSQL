@@ -12,7 +12,7 @@ router.post('/signup', user.signup);
 // Logout functionality.
 router.post('/logout', user.logout);
 router.get('/logout', user.logout);
-// GET home page.
+// GET home page, landing routes.
 router.get('/', landing.get_landing);
 router.post('/', landing.submit_lead);
 router.get('/leads', landing.show_leads);
