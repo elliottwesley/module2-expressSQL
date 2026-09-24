@@ -1,56 +1,29 @@
 {
-
-        "name": "expresssql",
-
-        "version": "0.0.0",
-
-        "private": true,
-
-        "scripts": {
-
-                "start": "node ./bin/www",
-
-                "devstart": "nodemon ./bin/www"
-
-        },
-
-        "dependencies": {
-
-                "bcrypt": "^6.0.0",
-
-                "connect-flash": "^0.1.1",
-
-                "cookie-parser": "~1.4.7",
-
-                "debug": "~2.6.9",
-
-                "express": "~4.22.1",
-
-                "express-session": "^1.18.2",
-
-                "http-errors": "~1.6.3",
-
-                "lodash": "^4.18.1",
-
-                "morgan": "~1.10.1",
-
-                "passport": "^0.6.0",
-
-                "passport-local": "^1.0.0",
-
-                "pg": "^7.12.1",
-
-                "pug": "^3.0.3",
-
-                "sequelize": "^6.37.8",
-
-                "validator": "^13.15.23"
-
-        },
-
-        "devDependencies": {
-
-                "nodemon": "^2.0.20"
-
-        }
+  "name": "expresssql",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www",
+    "devstart": "nodemon ./bin/www"
+  },
+  "dependencies": {
+    "bcrypt": "^6.0.0",
+    "connect-flash": "^0.1.1",
+    "cookie-parser": "~1.4.7",
+    "debug": "~2.6.9",
+    "express": "~4.22.1",
+    "express-session": "^1.18.2",
+    "http-errors": "~1.6.3",
+    "lodash": "^4.18.1",
+    "morgan": "~1.10.1",
+    "passport": "^0.6.0",
+    "passport-local": "^1.0.0",
+    "pg": "^7.12.1",
+    "pug": "^3.0.3",
+    "sequelize": "^6.37.8",
+    "validator": "^13.15.23"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  }
 }
